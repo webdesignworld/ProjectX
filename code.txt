@@ -1,0 +1,300 @@
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~
+$ cd Desktop
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop
+$ mkdir ProjectX
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop
+$ cd ProjectX
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX
+$ mkdir docs
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX
+$ cd docs
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/docs
+$ mkdir reports
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/docs
+$ cd reports
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/docs/reports
+$ touch report_one.txt
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/docs/reports
+$ touch report_two.txt
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/docs/reports
+$ ls
+report_one.txt  report_two.txt
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/docs/reports
+$ cd ..
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/docs
+$ mkdir images
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/docs
+$ ls
+images/  reports/
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/docs
+$ cd ..
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX
+$ mkdir src
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX
+$ cd src
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/src
+$ mkdir html
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/src
+$ cd html
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/src/html
+$ touch index.html
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/src/html
+$ ls
+index.html
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/src/html
+$ cd ..
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/src
+$ mkdir css
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/src
+$ cd css
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/src/css
+$ touch style.css
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/src/css
+$ ls
+style.css
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/src/css
+$ cd ..
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/src
+$ mkdir js
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/src
+$ cd js
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/src/js
+$ touch script.js
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/src/js
+$ ls
+script.js
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/src/js
+$ cd ..
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/src
+$ cd ..
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX
+$ ls
+docs/  src/
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX
+$ mkdir data
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX
+$ cd data
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/data
+$ touch data.txt
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/data
+$ ls
+data.txt
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/data
+$ echo "Hello Data" > data.txt
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/data
+$ cat data.txt
+Hello Data
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/data
+$ cd ..
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX
+$ git init
+Initialized empty Git repository in C:/Users/Sveta/Desktop/ProjectX/.git/
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX (master)
+$ git add ProjectX
+fatal: pathspec 'ProjectX' did not match any files
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX (master)
+$ git add data docs src
+warning: in the working copy of 'data/data.txt', LF will be replaced by CRLF the next time Git touches it
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   data/data.txt
+        new file:   docs/reports/report_one.txt
+        new file:   docs/reports/report_two.txt
+        new file:   src/css/style.css
+        new file:   src/html/index.html
+        new file:   src/js/script.js
+
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX (master)
+$ git commit -m "initial setup"
+[master (root-commit) 7f8669e] initial setup
+ 6 files changed, 1 insertion(+)
+ create mode 100644 data/data.txt
+ create mode 100644 docs/reports/report_one.txt
+ create mode 100644 docs/reports/report_two.txt
+ create mode 100644 src/css/style.css
+ create mode 100644 src/html/index.html
+ create mode 100644 src/js/script.js
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX (master)
+$ touch images/.gitkeep
+touch: cannot touch 'images/.gitkeep': No such file or directory
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX (master)
+$ cd docs
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/docs (master)
+$ cd images
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/docs/images (master)
+$ touch .gitkeep
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/docs/images (master)
+$ ls
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/docs/images (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/docs/images (master)
+$ git add .gitkeep
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/docs/images (master)
+$ git commit -m " added gitkeep"
+[master 2cbc367]  added gitkeep
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 docs/images/.gitkeep
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX/docs/images (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~
+$ cd ProjectX
+bash: cd: ProjectX: No such file or directory
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~
+$ cd Desktop
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop
+$ cd ProjectX
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX (master)
+$ git remote add ProjectX https://github.com/webdesignworld/ProjectX.git
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX (master)
+$ git push remote development
+error: src refspec development does not match any
+error: failed to push some refs to 'remote'
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX (master)
+$ gt branch
+bash: gt: command not found
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX (master)
+$ git branch
+* master
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX (master)
+$ git checkout -b development
+Switched to a new branch 'development'
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX (development)
+$ git push remote development
+fatal: 'remote' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX (development)
+$ git push development
+fatal: 'development' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX (development)
+$ git push
+fatal: The current branch development has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream ProjectX development
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX (development)
+$ git push --set-upstream ProjectX development
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (15/15), 1.05 KiB | 359.00 KiB/s, done.
+Total 15 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'development' on GitHub by visiting:
+remote:      https://github.com/webdesignworld/ProjectX/pull/new/development
+remote:
+To https://github.com/webdesignworld/ProjectX.git
+ * [new branch]      development -> development
+branch 'development' set up to track 'ProjectX/development'.
+
+Sveta@DESKTOP-1HBOJIM MINGW64 ~/Desktop/ProjectX (development)
+$ git status
+On branch development
+Your branch is up to date with 'ProjectX/development'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/html/index.html
+
+
+
+
